@@ -9,6 +9,11 @@ export const FooterContainer = styled.footer`
   height: 72px;
   display: flex;
   align-items: center;
+
+  .container {
+    max-width: 1440px;
+    width: 100%;
+  }
 `
 export const ListItems = styled.ul`
   display: flex;

@@ -36,4 +36,14 @@ export const GlobalStyle = createGlobalStyle`
   .flex {
     display: flex;
   }
+
+  .color-blue {
+    color: ${colors.blue};
+  }
+
+  .line {
+    width: 100%;
+    border: 1px solid ${colors.grey};
+    margin: 16px 0;
+  }
 `
