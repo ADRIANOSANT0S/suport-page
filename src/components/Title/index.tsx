@@ -3,10 +3,10 @@ import { TitleContainer } from './styles'
 
 type Props = {
   children: string
-  as: ElementType
+  as?: ElementType
 }
 
-const Title = ({ children, as }: Props) => (
+const Title = ({ children, as = 'h1' }: Props) => (
   <TitleContainer as={as}>{children}</TitleContainer>
 )
 

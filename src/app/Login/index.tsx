@@ -41,7 +41,7 @@ const Login = () => {
                 height={32}
               />
             </S.ContainerLogo>
-            <Title>Acessar Conta</Title>
+            <Title as='h3'>Acessar Conta</Title>
             <form>
               <S.InputGroup>
                 <S.Label htmlFor="login">CPF ou e-mail</S.Label>
