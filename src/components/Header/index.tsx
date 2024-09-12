@@ -8,7 +8,7 @@ const Header = () => (
   <S.HeaderContainer className="container">
     <Title as="h2">ReparoRápido</Title>
     <S.Profile>
-      <span>Nome Usuário</span>
+      <span>Nicollas</span>
       <Image
         src="/image/icon_perfil.png"
         alt="Icon de perfil"
