@@ -1,18 +1,41 @@
+'use client'
+
+import { useState } from 'react'
+
 import * as S from './styles'
 
 const Aside = () => {
+  const [openMenu, setOpemMenu] = useState(false)
+  const [clicked, setClicked] = useState(false)
+  const [showLinks, setShowLinks] = useState(false)
+
+  const handleMenuClick = () => {
+    setOpemMenu(!openMenu)
+    handleMenuContainerClick()
+  }
+
+  const handleMenuContainerClick = () => {
+    if (openMenu) {
+      setShowLinks(!showLinks)
+      setClicked(!clicked)
+    }
+  }
+
   return (
-    <S.AsideContainer>
-      <S.Menu>
+    <S.AsideContainer openMenu={openMenu} showListItems={showLinks}>
+      <S.Menu onClick={handleMenuClick}>
         <span></span>
         <span></span>
         <span></span>
       </S.Menu>
-
-      <S.MenuContainer>
+      <S.MenuContainer
+        openMenu={openMenu}
+        clicked={clicked}
+        onClick={handleMenuContainerClick}
+      >
         <span>+</span> <span className="show">Nova conversa</span>
       </S.MenuContainer>
-      <div className='show'>
+      <div className={showLinks ? 'show' : ''}>
         <S.MenuList>Recentes</S.MenuList>
         <S.ContainerItemMenu>
           <li>
