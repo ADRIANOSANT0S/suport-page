@@ -21,6 +21,11 @@ export const containerBg = styled.div`
     margin-bottom: 16px;
     padding: 0 24px;
   }
+
+  .responsive-image {
+    position: relative;
+    height: 100dvh;
+  }
 `
 
 export const ContainerLogin = styled.div`

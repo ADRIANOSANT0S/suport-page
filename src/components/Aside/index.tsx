@@ -11,7 +11,9 @@ const Aside = () => {
 
   const handleMenuClick = () => {
     setOpemMenu(!openMenu)
-    handleMenuContainerClick()
+    if (showLinks) {
+      handleMenuContainerClick()
+    }
   }
 
   const handleMenuContainerClick = () => {
@@ -33,9 +35,9 @@ const Aside = () => {
         clicked={clicked}
         onClick={handleMenuContainerClick}
       >
-        <span>+</span> <span className="show">Nova conversa</span>
+        <span>+</span> <span>Nova conversa</span>
       </S.MenuContainer>
-      <div className={showLinks ? 'show' : ''}>
+      <div>
         <S.MenuList>Recentes</S.MenuList>
         <S.ContainerItemMenu>
           <li>

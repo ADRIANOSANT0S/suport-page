@@ -15,12 +15,14 @@ const Login = () => {
             Abra a porta para solucionar os problemas do seu carro e dirija com
             tranquilidade
           </p>
-          <Image
-            src="/image/vetor_car_reparo.png"
-            alt="Logo da empresa Porto Seguro"
-            width={840} // Largura da imagem
-            height={632}
-          />
+          <div className='responsive-image'>
+            <Image
+              src="/image/vetor_car_reparo.png"
+              alt="Logo da empresa Porto Seguro"
+              fill
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
         </div>
       </S.containerBg>
       <S.ContainerLogin>
@@ -41,7 +43,7 @@ const Login = () => {
                 height={32}
               />
             </S.ContainerLogo>
-            <Title as='h3'>Acessar Conta</Title>
+            <Title as="h3">Acessar Conta</Title>
             <form>
               <S.InputGroup>
                 <S.Label htmlFor="login">CPF ou e-mail</S.Label>
