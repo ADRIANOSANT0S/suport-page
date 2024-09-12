@@ -48,7 +48,7 @@ const Login = () => {
           </div>
           <S.TextSize18>
             Não tem uma conta?{' '}
-            <Link href="/Faq" className="color-blue">
+            <Link href="/" className="color-blue">
               Cadastre-se
             </Link>
           </S.TextSize18>
@@ -59,13 +59,13 @@ const Login = () => {
             oferecer
           </S.TextSmall>
           <Button size="small" type="button">
-            <Link href="#" className="text-white">
+            <Link href="/" className="text-white">
               Saiba mais
             </Link>
           </Button>
           <S.Text>
             Aponte a câmera do celular e{' '}
-            <Link href="#" className="color-blue">
+            <Link href="/" className="color-blue">
               Saiba mais!
             </Link>
           </S.Text>
