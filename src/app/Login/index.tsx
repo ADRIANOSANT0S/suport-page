@@ -52,7 +52,7 @@ const Login = () => {
                 <S.Input type="text" id="password" />
               </S.InputGroup>
               <S.TextRight>
-                <Link href="#" className="color-blue">
+                <Link href="/Home" className="color-blue">
                   Esqueci minha senha
                 </Link>
               </S.TextRight>
@@ -63,7 +63,7 @@ const Login = () => {
           </div>
           <S.TextSize18>
             Não tem uma conta?{' '}
-            <Link href="/" className="color-blue">
+            <Link href="/Faq" className="color-blue">
               Cadastre-se
             </Link>
           </S.TextSize18>
