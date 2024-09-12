@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import styled from 'styled-components'
 
@@ -17,6 +17,7 @@ export const ButtonContainer = styled.button<Props>`
   background-color: ${colors.blue};
   border: none;
   margin: 16px 0;
+  cursor: pointer;
 
   .text-white {
     color: ${colors.white};

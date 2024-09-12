@@ -2,19 +2,29 @@
 
 import { styled } from 'styled-components'
 
-import { colors } from '@/components/GlobalStyle/style'
+import { breakPoint, colors } from '@/components/GlobalStyle/style'
 
 export const Title = styled.h1`
   color: ${colors.black};
   font-weight: 600;
   font-size: 56px;
   line-height: 64.8px;
+
+  @media screen and (max-width: ${breakPoint.tablet}) {
+    padding-top: 80px;
+  }
 `
 
 export const ListContainer = styled.ul`
   display: flex;
+  justify-content: space-between;
   margin-top: 80px;
   gap: 12px;
+
+  @media screen and (max-width: ${breakPoint.tablet}) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `
 
 export const ListItem = styled.li`

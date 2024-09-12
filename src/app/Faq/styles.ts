@@ -2,17 +2,25 @@
 
 import styled from 'styled-components'
 
-import { colors } from '@/components/GlobalStyle/style'
+import { breakPoint, colors } from '@/components/GlobalStyle/style'
 
 export const ContainerPosition = styled.div`
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+
+  @media screen and (max-width: ${breakPoint.tablet}) {
+    padding-top: 72px;
+  }
 `
 
 export const Container = styled.div`
   max-width: 664px;
   width: 100%;
   margin: 0 auto;
+
+  @media screen and (max-width: ${breakPoint.tablet}) {
+    width: 90%;
+  }
 `
 export const FaqContainer = styled.ul`
   color: ${colors.black};
@@ -81,7 +89,6 @@ export const ContainerButtons = styled.div`
   display: flex;
   justify-content: center;
   margin: 24px 0 64px;
-
 `
 
 export const ButtonYes = styled.button`

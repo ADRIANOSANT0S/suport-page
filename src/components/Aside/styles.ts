@@ -49,7 +49,7 @@ export const MenuContainer = styled.div<MenuContainerProps>`
   height: 40px;
   border-radius: ${(props) => (props.clicked ? '40px' : '20px')};
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px;
   border: 1px solid ${colors.white};

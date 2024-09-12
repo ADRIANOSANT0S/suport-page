@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import Button from '@/components/Button'
 import Title from '@/components/Title'
+import Form from '@/components/Form'
 
 import * as S from './styles'
 
@@ -15,7 +16,7 @@ const Login = () => {
             Abra a porta para solucionar os problemas do seu carro e dirija com
             tranquilidade
           </p>
-          <div className='responsive-image'>
+          <div className="responsive-image">
             <Image
               src="/image/vetor_car_reparo.png"
               alt="Logo da empresa Porto Seguro"
@@ -35,33 +36,15 @@ const Login = () => {
                 width={48}
                 height={32}
               />
-
               <Image
                 src="/image/logo_porto_seguro.png"
                 alt="Logo da empresa Porto Seguro"
-                width={140} // Largura da imagem
+                width={140}
                 height={32}
               />
             </S.ContainerLogo>
             <Title as="h3">Acessar Conta</Title>
-            <form>
-              <S.InputGroup>
-                <S.Label htmlFor="login">CPF ou e-mail</S.Label>
-                <S.Input type="text" placeholder="" id="login" />
-              </S.InputGroup>
-              <S.InputGroup>
-                <S.Label htmlFor="password">senha</S.Label>
-                <S.Input type="text" id="password" />
-              </S.InputGroup>
-              <S.TextRight>
-                <Link href="/Home" className="color-blue">
-                  Esqueci minha senha
-                </Link>
-              </S.TextRight>
-              <Button size="big" type="submit">
-                Entrar
-              </Button>
-            </form>
+            <Form />
           </div>
           <S.TextSize18>
             Não tem uma conta?{' '}

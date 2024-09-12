@@ -18,6 +18,11 @@ export const colors = {
   bgLogin: '#a4c6cf'
 }
 
+export const breakPoint = {
+  tablet: '1023px',
+  mobile: '768px'
+}
+
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -32,10 +37,18 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width: ${breakPoint.tablet}) {
+      width: 90%;
+    }
   }
 
   .flex {
     display: flex;
+
+    @media screen and (max-width: ${breakPoint.tablet}) {
+      justify-content: center;
+    }
   }
 
   .center {
@@ -56,4 +69,15 @@ export const GlobalStyle = createGlobalStyle`
     margin: 16px 0;
   }
 
+  .responsive-menu {
+    @media screen and (max-width: ${breakPoint.tablet}) {
+      display: none;
+      width: 100%;
+    }
+  }
+  .responsive-menu-Mobile {
+    @media screen and (min-width: ${breakPoint.tablet}) {
+      display: none;
+    }
+  }
 `

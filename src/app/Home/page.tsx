@@ -2,14 +2,19 @@ import Image from 'next/image'
 
 import Header from '@/components/Header'
 
-import * as S from './styled'
 import Search from '@/components/Search'
 import Aside from '@/components/Aside'
+import { MenuMobile } from '@/components/MenuMobile'
+
+import * as S from './styled'
 
 const Home = () => (
   <div className="container">
-    <Aside />
-    <Header />
+    <MenuMobile />
+    <div className="responsive-menu">
+      <Aside />
+      <Header />
+    </div>
     <S.Title>
       Olá, <span className="color-blue">Nicollas</span> <br />
       Como posso te ajudar?
