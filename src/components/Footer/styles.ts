@@ -10,6 +10,9 @@ export const FooterContainer = styled.footer`
   display: flex;
   align-items: center;
 
+  position: relative;
+  z-index: 10;
+
   .container {
     max-width: 1440px;
     width: 100%;

@@ -3,7 +3,7 @@ import { TitleContainer } from './styles'
 
 type Props = {
   children: string
-  as?: ElementType
+  as: ElementType
 }
 
 const Title = ({ children, as }: Props) => (

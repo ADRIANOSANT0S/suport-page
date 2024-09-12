@@ -11,6 +11,7 @@ const inter = Inter({
 export const colors = {
   grey: '#D9D9D9',
   lightGrey: '#989898',
+  lightGrey2: '#7B6E6E',
   black: '#000000',
   blue: '#089CE2',
   white: '#ffffff',
@@ -37,6 +38,14 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
   }
 
+  .center {
+    align-items: center;
+  }
+
+  .direction {
+    flex-direction: column;
+  }
+
   .color-blue {
     color: ${colors.blue};
   }
@@ -46,4 +55,5 @@ export const GlobalStyle = createGlobalStyle`
     border: 1px solid ${colors.grey};
     margin: 16px 0;
   }
+
 `

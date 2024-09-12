@@ -8,6 +8,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px;
 `
 export const Profile = styled.div`
   display: flex;
@@ -18,5 +19,6 @@ export const Profile = styled.div`
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
+    margin-right: 8px;
   }
 `

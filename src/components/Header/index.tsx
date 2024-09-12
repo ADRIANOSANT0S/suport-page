@@ -4,7 +4,7 @@ import Title from '../Title'
 
 import * as S from './styles'
 
-export const Header = () => (
+const Header = () => (
   <S.HeaderContainer className="container">
     <Title as="h2">ReparoRápido</Title>
     <S.Profile>
@@ -18,3 +18,5 @@ export const Header = () => (
     </S.Profile>
   </S.HeaderContainer>
 )
+
+export default Header

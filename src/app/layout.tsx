@@ -1,9 +1,10 @@
 import Head from 'next/head'
 
-import { GlobalStyle } from '@/components/GlobalStyle/style'
 import StyledComponentsRegistry from '../lib/registry'
 
 import Footer from '@/components/Footer'
+
+import { GlobalStyle } from '@/components/GlobalStyle/style'
 
 export default function RootLayout({
   children
